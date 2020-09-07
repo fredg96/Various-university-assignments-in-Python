@@ -1,0 +1,1 @@
+Repository for assignments from unviersity courses written in Python. Currently contains code from course "Advanced Probabilistic Machine Learning" (1RT705), "Artificial Intelligence" (1DL340), "Computer Assisted Image Analysis II" (1TD398), and "Applied Finite Element Methods" (1TD056) at Uppsala University.
