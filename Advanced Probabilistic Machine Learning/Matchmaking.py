@@ -7,18 +7,15 @@ import math
 import pandas as pd
 import time
 
-#var_s1 = 25/3
-#var_s2 = 25/3
-#sigma_s = [[var_s1, 0], [0, var_s2]]
-
 def update_my(t, my_s1, var_s1, my_s2, var_s2, var_t, Sigma_T):
     return Sigma_T @ np.array([[my_s1 / var_s1 + t / var_t], [my_s2 / var_s1 - t / var_t]])
 
-    # Gibbs Sampler function
-    # s_sample and t_ sample are two/one dimentional vectors storing the values calculated
-
-
+    
+# Gibbs Sampler function
+# s_sample and t_ sample are two/one dimentional vectors storing the values calculated
 def gibbs_sample(t_guess, my_s1, var_s1, my_s2, var_s2, var_t, Sigma_T, s_sample, t_sample, y, num_samples):
+    
+    
     sigma_s = [[var_s1, 0], [0, var_s2]]
     my = update_my(t_guess, my_s1, var_s1, my_s2, var_s2, var_t, Sigma_T)
     s_sample[0] = rng.multivariate_normal(my.T[0], sigma_s)
