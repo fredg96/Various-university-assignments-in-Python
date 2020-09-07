@@ -1,1 +1,1 @@
-Contains code written during course Advanced Probabilistic Machine Learning (1RT705) the file "Matchmaking.py" contains the functions used to implement a variation of the TrueSkill algorithm using Bayesian network or message passing.
+Contains code written during course Advanced Probabilistic Machine Learning (1RT705) attended in autumn 2019 the file "Matchmaking.py" contains the functions used to implement a variation of the TrueSkill algorithm using Bayesian network or message passing.
